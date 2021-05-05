@@ -7,6 +7,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Shared\Shared.csproj" />
     
+    <PackageReference Include="protobuf-net" Version="$(ProtobufNetPackageVersion)" />
     <PackageReference Include="protobuf-net.Grpc.AspNetCore" Version="$(ProtobufNetGrpcPackageVersion)" />
   </ItemGroup>
 

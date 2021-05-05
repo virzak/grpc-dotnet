@@ -16,16 +16,16 @@
 
 #endregion
 
-using System.ServiceModel;
 using System.Threading.Tasks;
 using ProtoBuf.Grpc;
+using ProtoBuf.Grpc.Configuration;
 
 namespace Shared
 {
-    [ServiceContract]
+    [Service]
     public interface IGreeterService
     {
-        [OperationContract]
+        [Operation]
         Task<HelloReply> SayHelloAsync(HelloRequest request, CallContext context = default);
     }
 }
